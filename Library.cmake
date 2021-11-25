@@ -1,0 +1,8 @@
+message("CMAKE_PROJECT_NAME = ${CMAKE_PROJECT_NAME}")
+
+set(LIBRARY_NAME cmake_lib)
+set(CMAKE_CXX_STANDARD 17)
+
+set(LIB_SRCS ${LIB_SRCS} lib.cpp)
+
+add_library(${LIBRARY_NAME} SHARED ${LIB_SRCS})
